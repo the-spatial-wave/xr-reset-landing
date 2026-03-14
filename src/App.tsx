@@ -1,7 +1,6 @@
 import Navbar from './sections/Navbar'
 import Hero from './sections/Hero'
 import PortalPreview from './sections/PortalPreview'
-import Stats from './sections/Stats'
 import Problem from './sections/Problem'
 import Solution from './sections/Solution'
 import Protocol from './sections/Protocol'
@@ -21,7 +20,6 @@ function App() {
       <main>
         <Hero />
         <PortalPreview />
-        <Stats />
         <Problem />
         <Solution />
         <Protocol />
