@@ -35,9 +35,30 @@
     -webkit-text-fill-color: transparent;
   }
   .gradient-lyra-text {
-    background: linear-gradient(135deg, #00E5FF 0%, #FF2FD6 50%, #8B5CF6 100%);
+    background: linear-gradient(
+      135deg,
+      #00E5FF 0%,
+      #22D3EE 15%,
+      #F472B6 45%,
+      #E879F9 65%,
+      #8B5CF6 100%
+    );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  @media (max-width: 768px) {
+    .gradient-lyra-text {
+      background: linear-gradient(
+        135deg,
+        #00E5FF 0%,
+        #F472B6 50%,
+        #A78BFA 100%
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
   }
   .gradient-cta {
     background: linear-gradient(90deg, #00E5FF, #FF2FD6);
