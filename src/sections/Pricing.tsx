@@ -72,7 +72,7 @@ export default function Pricing() {
               </ul>
 
               <a
-                href={tier.disabled ? '#' : '#checkout'}
+                href={tier.disabled ? '#' : 'https://www.skool.com/spatial-wave-6263/classroom'}
                 className={`relative block w-full text-center py-4 rounded-sm font-display font-bold tracking-wide transition-all overflow-hidden ${tier.highlight ? 'bg-brand-magenta text-white hover:bg-opacity-90 glow-magenta' : 'bg-brand-silver/10 text-brand-silver hover:bg-brand-silver/20 cursor-not-allowed'}`}
               >
                 {tier.highlight && (

@@ -37,7 +37,7 @@ export default function PortalPreview() {
           <a href="https://xr-immersive-web-v1.vercel.app/" target="_blank" rel="noopener noreferrer" className="flex items-center px-6 py-3 rounded-sm bg-brand-deep/50 border border-brand-cyan/30 text-brand-cyan font-medium hover:bg-brand-cyan/10 transition-colors">
             Apri la scena live <ExternalLink size={18} className="ml-2" />
           </a>
-          <a href="#pricing" className="px-6 py-3 rounded-sm bg-brand-magenta text-white font-medium glow-magenta hover:opacity-90 transition-opacity">
+          <a href="https://www.skool.com/spatial-wave-6263/classroom" className="px-6 py-3 rounded-sm bg-brand-magenta text-white font-medium glow-magenta hover:opacity-90 transition-opacity">
             Inizia il Reset
           </a>
         </div>

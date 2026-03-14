@@ -6,6 +6,8 @@ import Solution from './sections/Solution'
 import Protocol from './sections/Protocol'
 import Features from './sections/Features'
 import HowItWorks from './sections/HowItWorks'
+import ForWho from './sections/ForWho'
+import Result from './sections/Result'
 import Testimonials from './sections/Testimonials'
 import Pricing from './sections/Pricing'
 import Faq from './sections/Faq'
@@ -25,6 +27,8 @@ function App() {
         <Protocol />
         <Features />
         <HowItWorks />
+        <ForWho />
+        <Result />
         <Testimonials />
         <Pricing />
         <Faq />

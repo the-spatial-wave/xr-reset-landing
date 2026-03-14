@@ -21,7 +21,7 @@ export default function Navbar() {
             <a href="#bundle" className="text-sm font-medium hover:text-brand-cyan transition-colors">Bundle</a>
             <a href="#pricing" className="text-sm font-medium hover:text-brand-cyan transition-colors">Prezzo</a>
             <a href="#faq" className="text-sm font-medium hover:text-brand-cyan transition-colors">FAQ</a>
-            <a href="#pricing" className="px-5 py-2.5 rounded-sm bg-brand-magenta text-white font-medium hover:bg-opacity-90 transition-all glow-magenta text-sm">
+            <a href="https://www.skool.com/spatial-wave-6263/classroom" className="px-5 py-2.5 rounded-sm bg-brand-magenta text-white font-medium hover:bg-opacity-90 transition-all glow-magenta text-sm">
               Inizia il Reset
             </a>
           </div>

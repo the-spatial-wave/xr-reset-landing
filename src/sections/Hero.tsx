@@ -88,7 +88,7 @@ export default function Hero() {
         </motion.p>
 
         <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-6 w-full sm:w-auto mt-4">
-          <a href="#pricing" className="group relative px-8 py-4 gradient-cta glow-lyra text-white font-bold rounded-sm overflow-hidden flex items-center justify-center transition-transform hover:scale-105">
+          <a href="https://www.skool.com/spatial-wave-6263/classroom" className="group relative px-8 py-4 gradient-cta glow-lyra text-white font-bold rounded-sm overflow-hidden flex items-center justify-center transition-transform hover:scale-105">
             <motion.div
               className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent"
               initial={{ x: "-100%" }}
