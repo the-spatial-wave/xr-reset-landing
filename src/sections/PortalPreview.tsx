@@ -5,7 +5,7 @@ export default function PortalPreview() {
     <section className="py-24 relative overflow-hidden bg-brand-void" id="reset">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-5xl font-display font-bold text-white mb-6">Non devi immaginarlo. <span className="text-brand-magenta">Puoi già entrarci.</span></h2>
+          <h2 className="text-3xl md:text-5xl font-display font-bold gradient-lyra-text mb-6">Non devi immaginarlo. <span className="text-brand-magenta">Puoi già entrarci.</span></h2>
           <p className="text-lg text-brand-silver font-sans leading-relaxed">
             Questa è una scena reale pubblicata nel browser. XR Reset ti accompagna esattamente verso questo risultato: una presenza digitale viva, accessibile, tua.
           </p>

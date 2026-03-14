@@ -28,6 +28,10 @@ export default function Footer() {
             <a href="#" className="hover:text-brand-silver transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-brand-silver transition-colors">Termini e Condizioni</a>
           </div>
+          <div className="text-right mt-4 md:mt-0">
+            <span className="text-brand-fog/60">by </span>
+            <span className="gradient-lyra-text font-medium">The Spatial Wave</span>
+          </div>
         </div>
       </div>
     </footer>

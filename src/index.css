@@ -34,4 +34,20 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+  .gradient-lyra-text {
+    background: linear-gradient(135deg, #00E5FF 0%, #FF2FD6 50%, #8B5CF6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .gradient-cta {
+    background: linear-gradient(90deg, #00E5FF, #FF2FD6);
+  }
+  .glow-lyra {
+    box-shadow: 0 0 30px rgba(0,229,255,0.2), 0 0 60px rgba(255,47,214,0.15), 0 0 90px rgba(139,92,246,0.1);
+  }
+  .border-gradient-lyra {
+    border: 1px solid transparent;
+    background: linear-gradient(#080C12, #080C12) padding-box,
+                linear-gradient(135deg, #00E5FF, #FF2FD6, #8B5CF6) border-box;
+  }
 }

@@ -14,7 +14,10 @@ export default {
           cyan: '#00E5FF',
           magenta: '#FF2FD6',
           teal: '#2EF2C9',
-          violet: '#7A6CFF',
+          violet: '#8B5CF6',
+          purple: '#A855F7',
+          pink: '#EC4899',
+          coral: '#F97316',
           silver: '#C8CCD6',
           fog: 'rgba(183, 192, 204, 0.45)',
         }

@@ -1,3 +1,6 @@
+import { motion } from 'framer-motion';
+import AnimatedCard from '../components/AnimatedCard';
+
 export default function Testimonials() {
   const reviews = [
     {
@@ -17,13 +20,19 @@ export default function Testimonials() {
   return (
     <section className="py-24 bg-brand-deep/30 border-y border-[rgba(0,229,255,0.05)]" id="testimonials">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-display font-bold text-white mb-4">Meno Frustrazione. <span className="text-brand-cyan">Più Presenza.</span></h2>
-        </div>
+        <motion.div
+          className="text-center mb-16"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7, ease: [0.25, 0.4, 0.25, 1] }}
+        >
+          <h2 className="text-3xl md:text-5xl font-display font-bold gradient-lyra-text mb-4">Meno Frustrazione. <span className="text-brand-cyan">Più Presenza.</span></h2>
+        </motion.div>
 
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {reviews.map((rev, i) => (
-            <div key={i} className="glass-card p-8 rounded-xl border border-brand-silver/10 hover:border-brand-magenta/30 transition-colors">
+            <AnimatedCard key={i} index={i} glowColor="magenta">
               <div className="text-brand-cyan text-4xl font-display mb-4 opacity-50">"</div>
               <p className="text-brand-silver md:text-lg mb-8 italic">{rev.quote}</p>
               <div className="flex items-center">
@@ -33,7 +42,7 @@ export default function Testimonials() {
                   <div className="text-sm font-medium text-brand-magenta">{rev.role}</div>
                 </div>
               </div>
-            </div>
+            </AnimatedCard>
           ))}
         </div>
       </div>

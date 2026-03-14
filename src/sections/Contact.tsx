@@ -4,7 +4,7 @@ export default function Contact() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="max-w-3xl mx-auto glass-card p-8 md:p-12 rounded-2xl border border-brand-cyan/20">
           <div className="text-center mb-10">
-            <h2 className="text-3xl font-display font-bold text-white mb-4">Contatti</h2>
+            <h2 className="text-3xl font-display font-bold gradient-lyra-text mb-4">Contatti</h2>
             <p className="text-brand-silver">Hai dubbi sul protocollo? Lyra è in ascolto.</p>
           </div>
           

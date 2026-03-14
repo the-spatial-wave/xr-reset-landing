@@ -20,7 +20,7 @@ export default function Faq() {
     <section className="py-24 bg-brand-deep/20 border-t border-[rgba(255,255,255,0.05)]" id="faq">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-display font-bold text-white mb-6">FAQ</h2>
+          <h2 className="text-3xl md:text-5xl font-display font-bold gradient-lyra-text mb-6">FAQ</h2>
           <p className="text-brand-silver text-lg">Chiarezza assoluta. Nessun attrito tecnico.</p>
         </div>
 

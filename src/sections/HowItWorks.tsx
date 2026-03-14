@@ -9,7 +9,7 @@ export default function HowItWorks() {
     <section className="py-24 bg-brand-void" id="how-it-works">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20">
-          <h2 className="text-3xl md:text-5xl font-display font-bold text-white mb-6">Tre fasi.<br/><span className="text-brand-cyan">Un solo risultato.</span></h2>
+          <h2 className="text-3xl md:text-5xl font-display font-bold gradient-lyra-text mb-6">Tre fasi.<br/><span className="text-brand-cyan">Un solo risultato.</span></h2>
           <div className="w-24 h-1 bg-gradient-to-r from-brand-cyan to-brand-magenta mx-auto rounded-full"></div>
         </div>
 
