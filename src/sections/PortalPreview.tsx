@@ -12,7 +12,7 @@ export default function PortalPreview() {
         </div>
 
         {/* Portal Frame */}
-        <div className="relative mx-auto max-w-5xl aspect-video rounded-xl overflow-hidden glass-card glow-cyan mb-12">
+        <div className="relative mx-auto max-w-5xl aspect-[4/3] md:aspect-video rounded-xl overflow-hidden glass-card glow-cyan mb-12">
           {/* Finto Header Mac/Window */}
           <div className="absolute top-0 w-full h-8 bg-brand-deep/80 border-b border-brand-cyan/20 flex items-center px-4 z-20">
             <div className="flex space-x-2">
@@ -23,12 +23,14 @@ export default function PortalPreview() {
             <div className="mx-auto text-xs text-brand-fog font-medium tracking-wider">xr-immersive-web-v1.vercel.app</div>
           </div>
           
-          <iframe 
-            src="https://xr-immersive-web-v1.vercel.app/" 
-            className="w-full h-full pt-8 border-none"
-            title="Preview Scena XR"
-            loading="lazy"
-          ></iframe>
+          <div className="w-full h-full pt-8 overflow-hidden">
+            <iframe
+              src="https://xr-immersive-web-v1.vercel.app/"
+              className="border-none md:w-full md:h-full md:scale-100 w-[200%] h-[200%] scale-50 origin-top-left"
+              title="Preview Scena XR"
+              loading="lazy"
+            ></iframe>
+          </div>
         </div>
 
         <div className="flex justify-center space-x-6">
