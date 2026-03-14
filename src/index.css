@@ -37,11 +37,11 @@
   .gradient-lyra-text {
     background: linear-gradient(
       135deg,
-      #00E5FF 0%,
-      #22D3EE 15%,
-      #F472B6 45%,
-      #E879F9 65%,
-      #8B5CF6 100%
+      #00F5FF 0%,
+      #00E5FF 15%,
+      #FF6BD6 45%,
+      #D946EF 65%,
+      #A855F7 100%
     );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -52,9 +52,9 @@
     .gradient-lyra-text {
       background: linear-gradient(
         135deg,
-        #00E5FF 0%,
-        #F472B6 50%,
-        #A78BFA 100%
+        #00F5FF 0%,
+        #FF6BD6 50%,
+        #A855F7 100%
       );
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
