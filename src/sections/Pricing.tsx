@@ -88,7 +88,7 @@ export default function Pricing() {
               className={`p-8 rounded-2xl relative flex flex-col ${
                 tier.highlight 
                   ? 'bg-brand-deep border border-brand-magenta/70 shadow-[0_0_80px_rgba(255,47,214,0.35)]' 
-                  : 'bg-[#0a121e]/80 border border-brand-silver/20'
+                  : 'bg-[#0a121e]/80 border border-brand-silver/20 opacity-90'
               }`}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -196,6 +196,56 @@ export default function Pricing() {
             </motion.div>
           ))}
         </div>
+
+        {/* Journey Line - Desktop/lg Only */}
+        <motion.div 
+          className="hidden lg:block mt-32 relative max-w-6xl mx-auto"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1, delay: 0.5 }}
+        >
+          <div className="text-center mb-10">
+            <span className="text-[10px] font-black uppercase tracking-[0.4em] text-brand-silver/30 bg-brand-void px-4 relative z-10">
+              Il tuo percorso XR
+            </span>
+            <div className="absolute top-1.5 left-0 w-full h-px bg-brand-silver/5 -z-0" />
+          </div>
+
+          <div className="relative h-0.5 w-full bg-brand-silver/10">
+            {/* Base Line with Subtle Flow */}
+            <motion.div 
+              className="absolute inset-0 bg-gradient-to-r from-brand-cyan/40 via-brand-magenta/40 to-brand-magenta/20 opacity-50"
+              animate={{ opacity: [0.3, 0.5, 0.3] }}
+              transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+            />
+
+            {/* Connecting Nodes with GRID logic for perfect alignment */}
+            <div className="absolute inset-0 grid grid-cols-3 items-center">
+              {/* Node 1: Starter */}
+              <div className="flex flex-col items-center">
+                <div className="w-2.5 h-2.5 rounded-full bg-brand-cyan/20 border border-brand-cyan/40" />
+                <span className="mt-3 text-[9px] font-black text-brand-silver/30 uppercase tracking-widest">Esperienza</span>
+              </div>
+
+              {/* Node 2: Bundle (Focus) */}
+              <div className="flex flex-col items-center">
+                <motion.div 
+                  className="w-3 h-3 rounded-full bg-brand-magenta shadow-[0_0_20px_#ff2fd6] z-10 border border-white/20"
+                  animate={{ scale: [1, 1.15, 1], opacity: [0.8, 1, 0.8] }}
+                  transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+                />
+                <span className="mt-3 text-[9px] font-black text-brand-magenta uppercase tracking-widest">Creazione</span>
+              </div>
+
+              {/* Node 3: Lyra Hub */}
+              <div className="flex flex-col items-center">
+                <div className="w-2.5 h-2.5 rounded-full bg-brand-magenta/10 border border-brand-magenta/30" />
+                <span className="mt-3 text-[9px] font-black text-brand-silver/30 uppercase tracking-widest">Ecosistema</span>
+              </div>
+            </div>
+          </div>
+        </motion.div>
       </div>
     </section>
   );
