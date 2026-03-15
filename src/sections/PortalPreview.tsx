@@ -38,7 +38,7 @@ export default function PortalPreview() {
             Apri la scena XR <ExternalLink size={18} className="ml-2" />
           </a>
           <a href="https://www.skool.com/spatial-wave-6263/classroom" className="flex items-center px-6 py-3 rounded-sm bg-brand-deep/50 border border-brand-cyan/30 text-brand-cyan font-medium hover:bg-brand-cyan/10 transition-colors">
-            Crea la tua scena
+            Crea la tua scena XR
           </a>
         </div>
       </div>

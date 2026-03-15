@@ -9,20 +9,20 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <div className="flex-shrink-0 flex items-center">
-            <span className="font-display font-bold text-xl tracking-wider">
+            <a href="#" className="font-display font-bold text-xl tracking-wider hover:opacity-80 transition-opacity">
               <span className="gradient-lyra-text">THE SPATIAL WAVE</span>
               <span className="text-brand-silver/60 mx-2">_</span>
               <span className="text-brand-magenta">XR RESET</span>
-            </span>
+            </a>
           </div>
           <div className="hidden md:flex items-center space-x-8">
             <a href="#reset" className="text-sm font-medium hover:text-brand-cyan transition-colors">Il Reset</a>
-            <a href="#protocol" className="text-sm font-medium hover:text-brand-cyan transition-colors">7 Giorni</a>
+            <a href="#protocol" className="text-sm font-medium hover:text-brand-cyan transition-colors">Come funziona</a>
             <a href="#bundle" className="text-sm font-medium hover:text-brand-cyan transition-colors">Bundle</a>
             <a href="#pricing" className="text-sm font-medium hover:text-brand-cyan transition-colors">Prezzo</a>
             <a href="#faq" className="text-sm font-medium hover:text-brand-cyan transition-colors">FAQ</a>
-            <a href="https://www.skool.com/spatial-wave-6263/classroom" className="px-5 py-2.5 rounded-sm bg-brand-magenta text-white font-medium hover:bg-opacity-90 transition-all glow-magenta text-sm">
-              Inizia il Reset
+            <a href="https://www.skool.com/spatial-wave-6263/classroom" className="px-5 py-2.5 rounded-sm bg-brand-magenta text-white font-medium hover:bg-opacity-90 transition-all glow-magenta text-sm text-center">
+              Crea la tua scena XR
             </a>
           </div>
           <div className="md:hidden flex items-center">
@@ -37,12 +37,12 @@ export default function Navbar() {
         <div className="md:hidden glass-panel border-t border-[rgba(0,229,255,0.1)]">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <a href="#reset" className="block px-3 py-2 text-base font-medium hover:text-brand-cyan">Il Reset</a>
-            <a href="#protocol" className="block px-3 py-2 text-base font-medium hover:text-brand-cyan">7 Giorni</a>
+            <a href="#protocol" className="block px-3 py-2 text-base font-medium hover:text-brand-cyan">Come funziona</a>
             <a href="#bundle" className="block px-3 py-2 text-base font-medium hover:text-brand-cyan">Bundle</a>
             <a href="#pricing" className="block px-3 py-2 text-base font-medium hover:text-brand-cyan">Prezzo</a>
             <a href="#faq" className="block px-3 py-2 text-base font-medium hover:text-brand-cyan">FAQ</a>
-            <a href="#pricing" className="block px-3 py-2 mt-4 text-center rounded-sm bg-brand-magenta text-white font-medium glow-magenta">
-              Inizia il Reset
+            <a href="https://www.skool.com/spatial-wave-6263/classroom" className="block px-3 py-2 mt-4 text-center rounded-sm bg-brand-magenta text-white font-medium glow-magenta">
+              Crea la tua scena XR
             </a>
           </div>
         </div>
