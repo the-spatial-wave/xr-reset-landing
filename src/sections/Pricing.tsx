@@ -81,7 +81,7 @@ export default function Pricing() {
           </div>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-10 items-start max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-10 items-start max-w-6xl mx-auto relative z-10">
           {tiers.map((tier, i) => (
             <motion.div
               key={i}
@@ -204,49 +204,43 @@ export default function Pricing() {
 
         {/* Journey Line - Desktop/lg Only */}
         <motion.div 
-          className="hidden lg:block mt-32 relative max-w-6xl mx-auto"
+          className="hidden lg:block mt-32 relative"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 1, delay: 0.5 }}
         >
-          <div className="text-center mb-10">
-            <span className="text-[10px] font-black uppercase tracking-[0.4em] text-brand-silver/30 bg-brand-void px-4 relative z-10">
+          <div className="text-center mb-10 relative">
+            <span className="text-[10px] font-black uppercase tracking-[0.4em] text-brand-silver/30 bg-brand-void px-6 relative z-10">
               Il tuo percorso XR
             </span>
-            <div className="absolute top-1.5 left-0 w-full h-px bg-brand-silver/5 -z-0" />
+            <div className="absolute top-1/2 left-0 w-full h-px bg-brand-silver/5 -z-0 -translate-y-1/2" />
           </div>
 
-          <div className="relative h-0.5 w-full bg-brand-silver/10">
-            {/* Base Line with Subtle Flow */}
-            <motion.div 
-              className="absolute inset-0 bg-gradient-to-r from-brand-cyan/40 via-brand-magenta/40 to-brand-magenta/20 opacity-50"
-              animate={{ opacity: [0.3, 0.5, 0.3] }}
-              transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-            />
-
-            {/* Connecting Nodes with GRID logic for perfect alignment */}
-            <div className="absolute inset-0 grid grid-cols-3 items-center">
+          <div className="max-w-6xl mx-auto relative">
+            <div className="absolute top-1/2 left-0 w-full h-[2px] bg-gradient-to-r from-brand-cyan via-brand-violet to-brand-pink opacity-50 -translate-y-1/2" />
+            
+            <div className="grid grid-cols-3 relative">
               {/* Node 1: Starter */}
               <div className="flex flex-col items-center">
-                <div className="w-2.5 h-2.5 rounded-full bg-brand-cyan/20 border border-brand-cyan/40" />
-                <span className="mt-3 text-[9px] font-black text-brand-silver/30 uppercase tracking-widest">Esperienza</span>
+                <div className="w-[10px] h-[10px] rounded-full bg-[#0a121e] border border-brand-cyan/40 relative z-10" />
+                <span className="mt-4 text-[9px] font-black text-brand-silver/30 uppercase tracking-[0.2em]">Esperienza</span>
               </div>
 
               {/* Node 2: Bundle (Focus) */}
               <div className="flex flex-col items-center">
                 <motion.div 
-                  className="w-3 h-3 rounded-full bg-brand-magenta shadow-[0_0_20px_#ff2fd6] z-10 border border-white/20"
-                  animate={{ scale: [1, 1.15, 1], opacity: [0.8, 1, 0.8] }}
+                  className="w-[12px] h-[12px] rounded-full bg-brand-magenta shadow-[0_0_20px_rgba(255,47,214,0.8)] border border-white/30 relative z-10"
+                  animate={{ scale: [1, 1.2, 1] }}
                   transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
                 />
-                <span className="mt-3 text-[9px] font-black text-brand-magenta uppercase tracking-widest">Creazione</span>
+                <span className="mt-4 text-[9px] font-black text-brand-magenta uppercase tracking-[0.2em]">Creazione</span>
               </div>
 
               {/* Node 3: Lyra Hub */}
               <div className="flex flex-col items-center">
-                <div className="w-2.5 h-2.5 rounded-full bg-brand-magenta/10 border border-brand-magenta/30" />
-                <span className="mt-3 text-[9px] font-black text-brand-silver/30 uppercase tracking-widest">Ecosistema</span>
+                <div className="w-[10px] h-[10px] rounded-full bg-[#0a121e] border border-brand-magenta/30 relative z-10" />
+                <span className="mt-4 text-[9px] font-black text-brand-silver/30 uppercase tracking-[0.2em]">Ecosistema</span>
               </div>
             </div>
           </div>
