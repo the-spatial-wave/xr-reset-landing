@@ -1,23 +1,46 @@
 import { motion } from 'framer-motion';
 
+interface Tier {
+  name: string;
+  price: string;
+  desc: string;
+  priceLabel?: string;
+  priceNote?: string;
+  badge?: string;
+  groups?: {
+    title: string;
+    items: string[];
+    note?: string;
+  }[];
+  features: string[];
+  cta: string;
+  highlight: boolean;
+  disabled: boolean;
+  link?: string;
+  footer?: string;
+}
+
 export default function Pricing() {
-  const tiers = [
+  const tiers: Tier[] = [
     {
       name: 'Starter', price: 'Free',
-      desc: 'Entra nello spazio XR\ne scopri dove puoi arrivare.',
+      desc: 'Entra nello spazio XR\ne scopri il tuo percorso.',
       groups: [
-        { title: 'ESPERIENZA XR', items: ['Demo scena XR nel browser', 'Esperienza XR Reset interattiva', 'Aggiornamenti Spatial Wave'] }
+        { 
+          title: 'ESPERIENZA XR', 
+          items: ['Demo scena XR nel browser', 'Esperienza XR Reset interattiva', 'Aggiornamenti Spatial Wave'],
+          note: 'Entra → esplora → scopri il tuo percorso'
+        }
       ],
       features: [], 
       cta: 'Inizia l’esperienza XR', highlight: false, disabled: false,
       link: 'https://xr-immersive-web-v1.vercel.app',
-      priceNote: 'Entra → esplora → scopri il tuo percorso',
       footer: 'Accesso gratuito · Funziona nel browser'
     },
     {
       name: 'XR Reset Bundle', price: '€29',
       priceLabel: 'Prezzo di lancio',
-      priceNote: '(per i primi 50 creators)',
+      priceNote: 'Early access\nper i primi 50 creators',
       badge: 'FOUNDING CREATORS',
       desc: 'Il pacchetto completo di attivazione in 7 giorni.',
       groups: [
@@ -31,7 +54,7 @@ export default function Pricing() {
     {
       name: 'Lyra Hub', price: "In arrivo",
       desc: "La presenza immersiva di Lyra\nnell’ecosistema Spatial Wave.",
-      priceNote: "Lyra vive nello spazio XR\ne ti accompagna tra scene,\ntutorial e nuovi workflow creativi.",
+      priceNote: "Lyra vive nello spazio XR\ne ti accompagna tra scene immersive,\ntutorial e nuovi workflow creativi.",
       groups: [
         { title: 'IN ARRIVO', items: ['Tutorial XR e AI', 'Workflow 3D (Blender · Daz)', 'Nuove esperienze immersive'] }
       ],
@@ -52,7 +75,10 @@ export default function Pricing() {
           transition={{ duration: 0.7, ease: [0.25, 0.4, 0.25, 1] }}
         >
           <h2 className="text-3xl md:text-5xl font-display font-bold gradient-lyra-text mb-6">Prodotto di <span className="text-brand-magenta">Attivazione</span></h2>
-          <p className="text-lg text-brand-silver">Entra nell'ecosistema The Spatial Wave e sblocca la tua prima scena immersiva.</p>
+          <p className="text-lg text-brand-silver mb-8">Entra nell'ecosistema The Spatial Wave e sblocca la tua prima scena immersiva.</p>
+          <div className="inline-block px-6 py-2 bg-brand-deep border border-brand-cyan/20 rounded-full text-xs font-bold uppercase tracking-[0.3em] text-brand-cyan mb-8">
+             Il tuo percorso XR inizia qui
+          </div>
         </motion.div>
 
         <div className="grid md:grid-cols-3 gap-8 items-center max-w-6xl mx-auto">
@@ -80,7 +106,7 @@ export default function Pricing() {
               <div className="flex items-baseline gap-2 mb-8">
                 <div className="text-6xl font-display font-black text-white">{tier.price}</div>
                 {tier.priceNote && (
-                  <div className="text-brand-silver/60 text-[10px] font-medium max-w-[150px] leading-tight mt-1">{tier.priceNote}</div>
+                  <div className="text-brand-silver/60 text-[10px] font-medium max-w-[150px] leading-tight mt-1 whitespace-pre-line">{tier.priceNote}</div>
                 )}
               </div>
 
@@ -103,6 +129,9 @@ export default function Pricing() {
                   {tier.groups.map((group, groupIdx) => (
                     <div key={groupIdx}>
                       <h4 className="text-brand-magenta text-[10px] font-black tracking-[0.2em] uppercase mb-3">{group.title}</h4>
+                      {group.note && (
+                        <p className="text-brand-silver/60 text-[10px] font-medium mb-3 italic">{group.note}</p>
+                      )}
                       <ul className="space-y-3">
                         {group.items.map((item, itemIdx) => (
                           <li key={itemIdx} className="flex font-semibold text-brand-fog text-sm items-start">
