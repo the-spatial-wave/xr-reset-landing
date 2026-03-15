@@ -56,6 +56,20 @@ export default function Pricing() {
               <p className="text-brand-silver text-sm mb-6">{tier.desc}</p>
               <div className="text-5xl font-display font-black text-white mb-8">{tier.price}</div>
 
+              {tier.highlight && (
+                <div className="flex flex-col gap-2 mb-8 -mt-4">
+                  <div className="flex items-center text-[10px] sm:text-xs uppercase tracking-widest font-bold text-brand-silver/80">
+                    <span className="text-brand-cyan mr-2">✔</span> Nessun software da installare
+                  </div>
+                  <div className="flex items-center text-[10px] sm:text-xs uppercase tracking-widest font-bold text-brand-silver/80">
+                    <span className="text-brand-cyan mr-2">✔</span> Funziona nel browser
+                  </div>
+                  <div className="flex items-center text-[10px] sm:text-xs uppercase tracking-widest font-bold text-brand-silver/80">
+                    <span className="text-brand-cyan mr-2">✔</span> Deploy su Vercel
+                  </div>
+                </div>
+              )}
+
               <ul className="space-y-4 mb-8">
                 {tier.features.map((f, j) => (
                   <motion.li
