@@ -27,10 +27,10 @@ function App() {
         <Protocol />
         <Result />
         <Features />
-        <HowItWorks />
-        <ForWho />
         <Testimonials />
         <Pricing />
+        <HowItWorks />
+        <ForWho />
         <Faq />
         <Contact />
         <FinalCTA />
