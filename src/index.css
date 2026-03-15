@@ -110,3 +110,23 @@
   box-shadow: 0 0 16px rgba(140, 120, 255, 0.20);
   color: #f2f0ff;
 }
+
+/* Social Hover Effects */
+.social-icon-wrapper {
+  transition: all 0.3s ease;
+}
+
+.hover-glow-instagram:hover {
+  color: #FF2FD6;
+  filter: drop-shadow(0 0 8px rgba(255, 47, 214, 0.6));
+}
+
+.hover-glow-facebook:hover {
+  color: #00E5FF;
+  filter: drop-shadow(0 0 8px rgba(0, 229, 255, 0.6));
+}
+
+.hover-glow-github:hover {
+  color: #8B5CF6;
+  filter: drop-shadow(0 0 8px rgba(139, 92, 246, 0.6));
+}
