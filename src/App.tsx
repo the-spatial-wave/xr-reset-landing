@@ -25,10 +25,10 @@ function App() {
         <Problem />
         <Solution />
         <Protocol />
+        <Result />
         <Features />
         <HowItWorks />
         <ForWho />
-        <Result />
         <Testimonials />
         <Pricing />
         <Faq />
