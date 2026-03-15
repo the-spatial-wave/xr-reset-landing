@@ -9,10 +9,9 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <div className="flex-shrink-0 flex items-center">
-            <a href="#" className="font-display font-bold text-xl tracking-wider hover:opacity-80 transition-opacity">
-              <span className="gradient-lyra-text">THE SPATIAL WAVE</span>
-              <span className="text-brand-silver/60 mx-2">_</span>
-              <span className="text-brand-magenta">XR RESET</span>
+            <a href="#" className="flex flex-col font-display font-bold tracking-wider hover:opacity-80 transition-opacity">
+              <span className="text-lg md:text-xl gradient-lyra-text leading-tight">THE SPATIAL WAVE</span>
+              <span className="text-xs md:text-sm text-brand-magenta tracking-[0.2em] uppercase">XR RESET</span>
             </a>
           </div>
           <div className="hidden md:flex items-center space-x-8">
