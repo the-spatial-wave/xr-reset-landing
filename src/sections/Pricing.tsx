@@ -4,9 +4,10 @@ export default function Pricing() {
   const tiers = [
     {
       name: 'Starter', price: 'Free',
-      desc: 'Esplora il mindset.',
-      features: ['Newsletter base', 'Community Read-only'],
-      cta: 'Coming Soon', highlight: false, disabled: true
+      desc: 'Scopri XR nel browser',
+      features: ['Demo scena XR', 'Introduzione XR Reset', 'Newsletter Spatial Wave'],
+      cta: 'Esplora la demo XR', highlight: false, disabled: false,
+      link: 'https://xr-immersive-web-v1.vercel.app'
     },
     {
       name: 'XR Reset Bundle', price: '€29',
@@ -120,8 +121,10 @@ export default function Pricing() {
               )}
 
               <a
-                href={tier.disabled ? '#' : 'https://www.skool.com/spatial-wave-6263/classroom'}
-                className={`relative block w-full text-center py-4 rounded-sm font-display font-black tracking-wide transition-all overflow-hidden ${tier.highlight ? 'bg-brand-magenta text-white hover:bg-opacity-90 glow-magenta shadow-[0_0_25px_rgba(255,47,214,0.4)]' : 'bg-brand-silver/10 text-brand-silver hover:bg-brand-silver/20 cursor-not-allowed'}`}
+                href={tier.disabled ? '#' : (tier.link || 'https://www.skool.com/spatial-wave-6263/classroom')}
+                target={tier.link ? "_blank" : undefined}
+                rel={tier.link ? "noopener noreferrer" : undefined}
+                className={`relative block w-full text-center py-4 rounded-sm font-display font-black tracking-wide transition-all overflow-hidden ${tier.highlight ? 'bg-brand-magenta text-white hover:bg-opacity-90 glow-magenta shadow-[0_0_25px_rgba(255,47,214,0.4)]' : 'bg-brand-silver/10 text-brand-silver hover:bg-brand-silver/20'}`}
               >
                 {tier.highlight && (
                   <motion.div
