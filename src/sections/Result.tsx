@@ -20,12 +20,27 @@ export default function Result() {
 
         {/* Browser mockup */}
         <motion.div
-          className="max-w-2xl mx-auto"
+          className="max-w-2xl mx-auto relative"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.2 }}
         >
+          {/* Information Badge */}
+          <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 z-30">
+            <motion.div 
+              className="bg-brand-cyan text-brand-void text-[10px] md:text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full shadow-[0_0_15px_rgba(0,229,255,0.5)] flex items-center gap-2 whitespace-nowrap"
+              animate={{ y: [0, -3, 0] }}
+              transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+            >
+              <span className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-void opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-brand-void"></span>
+              </span>
+              XR Demo — prova a muoverti
+            </motion.div>
+          </div>
+
           <div className="glass-card rounded-xl overflow-hidden border border-brand-cyan/30 glow-cyan">
             {/* Browser bar */}
             <div className="bg-brand-deep/80 px-4 py-3 border-b border-brand-cyan/20 flex items-center gap-3">
