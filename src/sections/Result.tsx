@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import { ExternalLink } from 'lucide-react';
 
 export default function Result() {
   return (
@@ -36,22 +35,20 @@ export default function Result() {
                 <div className="w-3 h-3 rounded-full bg-green-500/80"></div>
               </div>
               <div className="flex-1 bg-brand-void/50 rounded-md px-4 py-1.5 text-center">
-                <span className="text-brand-cyan font-mono text-sm">tuonome</span>
+                <span className="text-brand-cyan font-mono text-sm">xr-reset-starter</span>
                 <span className="text-brand-silver font-mono text-sm">.vercel.app</span>
               </div>
             </div>
 
-            {/* Content preview */}
-            <div className="p-8 bg-gradient-to-b from-brand-void to-brand-deep/50 text-center">
-              <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-gradient-to-br from-brand-cyan to-brand-magenta flex items-center justify-center">
-                <ExternalLink className="text-white" size={32} />
-              </div>
-              <p className="text-2xl font-display font-bold text-white mb-2">
-                La tua scena XR
-              </p>
-              <p className="text-brand-silver">
-                Live. Pubblica. Tua.
-              </p>
+            {/* Content preview - WebXR Iframe */}
+            <div className="aspect-video bg-brand-void/20 relative">
+              <iframe
+                src="https://xr-reset-starter.vercel.app/"
+                className="absolute inset-0 w-full h-full border-none shadow-inner"
+                title="WebXR Starter Scene"
+                loading="lazy"
+                allow="xr-spatial-tracking; accelerometer; gyroscope; magnetometer"
+              ></iframe>
             </div>
           </div>
 
