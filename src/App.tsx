@@ -11,6 +11,7 @@ import Result from './sections/Result'
 import Testimonials from './sections/Testimonials'
 import Pricing from './sections/Pricing'
 import IdealCategories from './sections/IdealCategories'
+import TechStack from './sections/TechStack'
 import NextSteps from './sections/NextSteps'
 import Faq from './sections/Faq'
 import Contact from './sections/Contact'
@@ -35,6 +36,7 @@ function App() {
         <Pricing />
         <NextSteps />
         <IdealCategories />
+        <TechStack />
         <Faq />
         <Contact />
         <FinalCTA />
