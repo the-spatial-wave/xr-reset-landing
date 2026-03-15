@@ -88,16 +88,16 @@ export default function Hero() {
         </motion.p>
 
         <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-6 w-full sm:w-auto mt-4">
-          <a href="https://www.skool.com/spatial-wave-6263/classroom" className="group relative px-8 py-4 gradient-cta glow-lyra text-white font-bold rounded-sm overflow-hidden flex items-center justify-center transition-transform hover:scale-105">
+          <a href="https://www.skool.com/spatial-wave-6263/classroom" className="group relative px-10 py-5 gradient-cta glow-lyra text-white font-black text-lg rounded-sm overflow-hidden flex items-center justify-center transition-transform hover:scale-105">
             <motion.div
-              className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent"
+              className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent"
               initial={{ x: "-100%" }}
               whileHover={{ x: "100%" }}
               transition={{ duration: 0.6 }}
             />
-            <span className="relative z-10 flex items-center">
-              Inizia il tuo XR Reset — €29
-              <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
+            <span className="relative z-10 flex items-center tracking-tight">
+              Crea la tua scena XR — €29
+              <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={24} />
             </span>
           </a>
           <a href="#reset" className="px-8 py-4 bg-brand-deep border border-brand-silver/20 text-white font-medium rounded-sm hover:border-brand-cyan/50 hover:bg-brand-deep/80 transition-all flex items-center justify-center glass-card">

@@ -12,7 +12,7 @@ export default function Pricing() {
       name: 'XR Reset Bundle', price: '€29',
       desc: 'Il pacchetto completo di attivazione in 7 giorni.',
       features: ['Corso Skool', 'Repository Starter', 'Protocollo Lancio', 'Audio Atmosferici Lyra', 'Link Vercel personale'],
-      cta: 'Voglio la mia prima scena XR', highlight: true, disabled: false
+      cta: 'Crea la tua scena XR', highlight: true, disabled: false
     },
     {
       name: 'Lyra Hub', price: "TBA",

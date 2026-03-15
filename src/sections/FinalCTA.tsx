@@ -11,8 +11,8 @@ export default function FinalCTA() {
           <strong className="text-white">La tua prima scena immersiva ti aspetta.</strong>
         </p>
 
-        <a href="https://www.skool.com/spatial-wave-6263/classroom" className="inline-flex items-center justify-center px-10 py-5 gradient-cta glow-lyra text-white font-bold text-lg rounded-sm overflow-hidden transition-transform hover:scale-105">
-          Inizia il tuo XR Reset — €29
+        <a href="https://www.skool.com/spatial-wave-6263/classroom" className="inline-flex items-center justify-center px-12 py-6 gradient-cta shadow-[0_0_40px_rgba(255,47,214,0.6)] text-white font-black text-xl rounded-sm overflow-hidden transition-all hover:scale-110 hover:shadow-[0_0_60px_rgba(255,47,214,0.8)]">
+          Crea la tua scena XR — €29
         </a>
       </div>
     </section>

@@ -1,4 +1,5 @@
-import { ExternalLink } from 'lucide-react';
+import { ExternalLink, ArrowRight } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 export default function PortalPreview() {
   return (
@@ -34,11 +35,20 @@ export default function PortalPreview() {
         </div>
 
         <div className="flex justify-center space-x-6">
-          <a href="https://xr-immersive-web-v1.vercel.app/" target="_blank" rel="noopener noreferrer" className="px-6 py-3 rounded-sm bg-brand-magenta text-white font-medium glow-magenta hover:opacity-90 transition-opacity flex items-center">
-            Apri la scena XR <ExternalLink size={18} className="ml-2" />
+          <a href="https://www.skool.com/spatial-wave-6263/classroom" className="group relative px-10 py-5 gradient-cta glow-lyra text-white font-black text-lg rounded-sm overflow-hidden flex items-center justify-center transition-transform hover:scale-105">
+            <motion.div
+              className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent"
+              initial={{ x: "-100%" }}
+              whileHover={{ x: "100%" }}
+              transition={{ duration: 0.6 }}
+            />
+            <span className="relative z-10 flex items-center tracking-tight">
+              Crea la tua scena XR — €29
+              <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={24} />
+            </span>
           </a>
-          <a href="https://www.skool.com/spatial-wave-6263/classroom" className="flex items-center px-6 py-3 rounded-sm bg-brand-deep/50 border border-brand-cyan/30 text-brand-cyan font-medium hover:bg-brand-cyan/10 transition-colors">
-            Crea la tua scena XR
+          <a href="https://xr-immersive-web-v1.vercel.app/" target="_blank" rel="noopener noreferrer" className="flex items-center px-6 py-3 rounded-sm bg-brand-deep/50 border border-brand-cyan/30 text-brand-cyan font-medium hover:bg-brand-cyan/10 transition-colors">
+            Apri la scena XR <ExternalLink size={18} className="ml-2" />
           </a>
         </div>
       </div>

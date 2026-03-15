@@ -1,5 +1,6 @@
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
+import { motion } from 'framer-motion';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,9 +21,17 @@ export default function Navbar() {
             <a href="#bundle" className="text-sm font-medium hover:text-brand-cyan transition-colors">Bundle</a>
             <a href="#pricing" className="text-sm font-medium hover:text-brand-cyan transition-colors">Prezzo</a>
             <a href="#faq" className="text-sm font-medium hover:text-brand-cyan transition-colors">FAQ</a>
-            <a href="https://www.skool.com/spatial-wave-6263/classroom" className="px-5 py-2.5 rounded-sm bg-brand-magenta text-white font-medium hover:bg-opacity-90 transition-all glow-magenta text-sm text-center">
+            <motion.a 
+              href="https://www.skool.com/spatial-wave-6263/classroom" 
+              className="px-5 py-2.5 rounded-sm bg-brand-magenta text-white font-bold hover:bg-opacity-90 transition-all shadow-[0_0_20px_rgba(255,47,214,0.4)] text-sm text-center"
+              animate={{ 
+                boxShadow: ["0 0 20px rgba(255,47,214,0.4)", "0 0 35px rgba(255,47,214,0.7)", "0 0 20px rgba(255,47,214,0.4)"],
+                scale: [1, 1.02, 1]
+              }}
+              transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+            >
               Crea la tua scena XR
-            </a>
+            </motion.a>
           </div>
           <div className="md:hidden flex items-center">
             <button onClick={() => setIsOpen(!isOpen)} className="text-brand-silver hover:text-white">
