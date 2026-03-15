@@ -34,11 +34,11 @@ export default function PortalPreview() {
         </div>
 
         <div className="flex justify-center space-x-6">
-          <a href="https://xr-immersive-web-v1.vercel.app/" target="_blank" rel="noopener noreferrer" className="flex items-center px-6 py-3 rounded-sm bg-brand-deep/50 border border-brand-cyan/30 text-brand-cyan font-medium hover:bg-brand-cyan/10 transition-colors">
-            Apri la scena live <ExternalLink size={18} className="ml-2" />
+          <a href="https://xr-immersive-web-v1.vercel.app/" target="_blank" rel="noopener noreferrer" className="px-6 py-3 rounded-sm bg-brand-magenta text-white font-medium glow-magenta hover:opacity-90 transition-opacity flex items-center">
+            Apri la scena XR <ExternalLink size={18} className="ml-2" />
           </a>
-          <a href="https://www.skool.com/spatial-wave-6263/classroom" className="px-6 py-3 rounded-sm bg-brand-magenta text-white font-medium glow-magenta hover:opacity-90 transition-opacity">
-            Inizia il Reset
+          <a href="https://www.skool.com/spatial-wave-6263/classroom" className="flex items-center px-6 py-3 rounded-sm bg-brand-deep/50 border border-brand-cyan/30 text-brand-cyan font-medium hover:bg-brand-cyan/10 transition-colors">
+            Crea la tua scena
           </a>
         </div>
       </div>
