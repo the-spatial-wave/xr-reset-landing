@@ -9,11 +9,11 @@ export default function HowItWorks() {
     <section className="py-24 bg-brand-void" id="how-it-works">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20">
-          <h2 className="text-3xl md:text-5xl font-display font-bold gradient-lyra-text mb-6">Cosa succede dopo</h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-brand-cyan to-brand-magenta mx-auto rounded-full opacity-50"></div>
+          <h2 className="text-3xl md:text-5xl font-display font-bold gradient-lyra-text mb-6">Tre fasi.<br/><span className="text-brand-cyan">Un solo risultato.</span></h2>
+          <div className="w-24 h-1 bg-gradient-to-r from-brand-cyan to-brand-magenta mx-auto rounded-full"></div>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 relative mb-16">
+        <div className="grid md:grid-cols-3 gap-8 relative">
           <div className="hidden md:block absolute top-12 left-[10%] right-[10%] h-px bg-gradient-to-r from-transparent via-brand-cyan/30 to-transparent z-0"></div>
           
           {steps.map((step, i) => (
@@ -25,13 +25,6 @@ export default function HowItWorks() {
               <p className="text-brand-silver font-medium">{step.desc}</p>
             </div>
           ))}
-        </div>
-
-        <div className="text-center">
-          <p className="text-xl md:text-2xl text-brand-silver/50 font-medium italic">
-            In meno di 7 giorni puoi passare<br />
-            da spettatore a <span className="text-brand-cyan">creatore XR.</span>
-          </p>
         </div>
       </div>
     </section>

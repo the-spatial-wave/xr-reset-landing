@@ -10,6 +10,8 @@ import ForWho from './sections/ForWho'
 import Result from './sections/Result'
 import Testimonials from './sections/Testimonials'
 import Pricing from './sections/Pricing'
+import IdealCategories from './sections/IdealCategories'
+import NextSteps from './sections/NextSteps'
 import Faq from './sections/Faq'
 import Contact from './sections/Contact'
 import FinalCTA from './sections/FinalCTA'
@@ -27,10 +29,12 @@ function App() {
         <Protocol />
         <Result />
         <Features />
-        <Testimonials />
-        <Pricing />
         <HowItWorks />
         <ForWho />
+        <Testimonials />
+        <Pricing />
+        <NextSteps />
+        <IdealCategories />
         <Faq />
         <Contact />
         <FinalCTA />
