@@ -188,8 +188,13 @@ export default function Pricing() {
                   <span className="relative z-10">{tier.cta}</span>
                 </a>
                 {tier.footer && (
-                  <div className="text-center mt-4 text-[10px] uppercase tracking-widest font-bold text-brand-silver/40">
-                    {tier.footer}
+                  <div className="text-center">
+                    <div className={`status-pill ${
+                      tier.name === 'Starter' ? 'starter' : 
+                      tier.name === 'XR Reset Bundle' ? 'reset' : 'hub'
+                    }`}>
+                      {tier.footer}
+                    </div>
                   </div>
                 )}
               </div>
