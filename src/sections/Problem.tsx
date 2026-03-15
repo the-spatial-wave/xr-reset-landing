@@ -17,14 +17,14 @@ export default function Problem() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.div
-          className="md:w-2/3 mb-16"
+          className="text-center mb-16 mx-auto max-w-3xl"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7, ease: [0.25, 0.4, 0.25, 1] }}
         >
           <h2 className="text-3xl md:text-5xl font-display font-bold gradient-lyra-text mb-6">La trappola del <span className="text-brand-cyan text-gradient">rumore digitale</span></h2>
-          <p className="text-lg md:text-xl text-brand-silver font-sans leading-relaxed border-l-2 border-brand-cyan/50 pl-6 py-2 glass-panel">
+          <p className="text-lg md:text-xl text-brand-silver font-sans leading-relaxed py-2 glass-panel">
             Il senso di inadeguatezza non è un limite personale.<br />
             <span className="text-white font-medium">È il sottoprodotto di un ecosistema che vende complessità.</span>
           </p>
