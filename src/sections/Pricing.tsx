@@ -29,10 +29,15 @@ export default function Pricing() {
       footer: 'Accesso immediato'
     },
     {
-      name: 'Lyra Hub', price: "TBA",
-      desc: "Accesso continuo all'ecosistema The Spatial Wave.",
-      features: ['Materiali mensili', 'Template Premium', 'Supporto diretto'],
-      cta: 'Join Waitlist', highlight: false, disabled: true
+      name: 'Lyra Hub', price: "In arrivo",
+      desc: "La presenza immersiva di Lyra\nnell’ecosistema Spatial Wave.",
+      priceNote: "Lyra vive nello spazio XR\ne ti accompagna tra scene,\ntutorial e nuovi workflow creativi.",
+      groups: [
+        { title: 'IN ARRIVO', items: ['Tutorial XR e AI', 'Workflow 3D (Blender · Daz)', 'Nuove esperienze immersive'] }
+      ],
+      features: [],
+      cta: 'Unisciti alla waitlist', highlight: false, disabled: true,
+      footer: 'Early access per i primi creator XR'
     }
   ];
 
