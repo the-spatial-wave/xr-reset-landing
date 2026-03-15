@@ -4,10 +4,15 @@ export default function Pricing() {
   const tiers = [
     {
       name: 'Starter', price: 'Free',
-      desc: 'Scopri XR nel browser',
-      features: ['Demo scena XR', 'Introduzione XR Reset', 'Newsletter Spatial Wave'],
-      cta: 'Esplora la demo XR', highlight: false, disabled: false,
-      link: 'https://xr-immersive-web-v1.vercel.app'
+      desc: 'Entra nello spazio XR\ne scopri dove puoi arrivare.',
+      groups: [
+        { title: 'ESPERIENZA XR', items: ['Demo scena XR nel browser', 'Esperienza XR Reset interattiva', 'Aggiornamenti Spatial Wave'] }
+      ],
+      features: [], 
+      cta: 'Inizia l’esperienza XR', highlight: false, disabled: false,
+      link: 'https://xr-immersive-web-v1.vercel.app',
+      priceNote: 'Entra → esplora → scopri il tuo percorso',
+      footer: 'Accesso gratuito · Funziona nel browser'
     },
     {
       name: 'XR Reset Bundle', price: '€29',
@@ -62,7 +67,7 @@ export default function Pricing() {
                 </div>
               )}
               <h3 className="text-2xl font-display font-bold text-white mb-2">{tier.name}</h3>
-              <p className="text-brand-silver text-sm mb-6">{tier.desc}</p>
+              <p className="text-brand-silver text-sm mb-6 whitespace-pre-line">{tier.desc}</p>
               
               {tier.priceLabel && (
                 <div className="text-brand-cyan text-xs font-bold uppercase tracking-widest mb-1">{tier.priceLabel}</div>
@@ -70,7 +75,7 @@ export default function Pricing() {
               <div className="flex items-baseline gap-2 mb-8">
                 <div className="text-6xl font-display font-black text-white">{tier.price}</div>
                 {tier.priceNote && (
-                  <div className="text-brand-silver/60 text-[10px] font-medium max-w-[100px] leading-tight mt-1">{tier.priceNote}</div>
+                  <div className="text-brand-silver/60 text-[10px] font-medium max-w-[150px] leading-tight mt-1">{tier.priceNote}</div>
                 )}
               </div>
 
