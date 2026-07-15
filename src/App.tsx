@@ -17,6 +17,7 @@ import Faq from './sections/Faq'
 import Contact from './sections/Contact'
 import FinalCTA from './sections/FinalCTA'
 import Footer from './sections/Footer'
+import CookieConsent from './components/CookieConsent'
 
 function App() {
   return (
@@ -42,6 +43,7 @@ function App() {
         <FinalCTA />
       </main>
       <Footer />
+      <CookieConsent />
     </div>
   )
 }

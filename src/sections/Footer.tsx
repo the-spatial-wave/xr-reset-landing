@@ -56,8 +56,8 @@ export default function Footer() {
           </div>
 
           <div className="flex space-x-8 mb-8 text-[10px] font-black uppercase tracking-widest text-brand-silver/40">
-            <a href="#" className="hover:text-brand-silver transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-brand-silver transition-colors">Termini e Condizioni</a>
+            <a href="/privacy.html" className="hover:text-brand-silver transition-colors">Privacy Policy</a>
+            <a href="/privacy.html#termini" className="hover:text-brand-silver transition-colors">Termini e Condizioni</a>
           </div>
 
           <div className="text-center">

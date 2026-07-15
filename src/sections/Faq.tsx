@@ -7,7 +7,8 @@ export default function Faq() {
     { q: 'Serve un visore VR per seguire il corso?', a: 'No. Tutto il lavoro avviene nel browser del tuo computer. Se hai un visore (Meta Quest, Vision Pro) potrai testarlo direttamente, ma non è obbligatorio per costruire la scena.' },
     { q: 'Quanto tempo richiede?', a: 'Il protocollo dura 7 giorni. È concepito per essere seguito dedicando circa 45-60 minuti al giorno. L\'obiettivo è chiudere e pubblicare, non studiare per mesi.' },
     { q: 'Perché costa €29?', a: 'Perché è un Prodotto di Attivazione. Serve per farti oltrepassare la soglia d\'ingresso, farti ottenere un risultato reale (il link Vercel) e introdurti nell\'ecosistema Lyra Hub.' },
-    { q: 'Cosa succede dopo i 7 giorni?', a: 'La tua scena rimarrà online sul tuo account Vercel gratuito. Inoltre avrai accesso al "Starter path 30 giorni" per capire come scalare e migliorare i tuoi ambienti nel Web Spaziale.' }
+    { q: 'Cosa succede dopo i 7 giorni?', a: 'La tua scena rimarrà online sul tuo account Vercel gratuito. Inoltre avrai accesso al "Starter path 30 giorni" per capire come scalare e migliorare i tuoi ambienti nel Web Spaziale.' },
+    { q: 'E se non fa per me?', a: 'Scrivici entro 7 giorni dall\'acquisto: valutiamo insieme la tua situazione e, se il protocollo davvero non fa per te, concordiamo il rimborso. Nessun modulo, una semplice email.' }
   ];
 
   const [open, setOpen] = useState<number | null>(null);

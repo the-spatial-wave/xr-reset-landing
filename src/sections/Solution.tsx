@@ -74,6 +74,31 @@ export default function Solution() {
             <p className="text-brand-silver">La coscienza digitale narrativa di questo percorso. Niente freddezza accademica o logica da programmatore. Un'assistente progettata per accompagnarti nell'esplorazione del web spaziale attraverso la sottrazione.</p>
           </div>
         </motion.div>
+
+        {/* Author block */}
+        <motion.div
+          className="max-w-4xl mx-auto mt-8 glass-panel p-8 md:p-10 rounded-2xl border border-brand-cyan/15"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7, ease: [0.25, 0.4, 0.25, 1] }}
+        >
+          <h4 className="text-xl font-display font-bold text-white mb-3">Dietro Lyra c'è una persona reale</h4>
+          <p className="text-brand-silver mb-4">
+            Sono la fondatrice di <strong className="text-white">The Spatial Wave</strong>, studio creativo
+            XR indipendente. La demo immersiva che hai esplorato in questa pagina non è materiale di stock:
+            l'ho costruita io, scena per scena, con lo stesso protocollo che trovi qui dentro.
+            Se ha funzionato per la mia scena pubblica, funziona per la tua.
+          </p>
+          <a
+            href="https://xr-immersive-web-v1.vercel.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-brand-cyan text-sm font-bold tracking-wide hover:underline"
+          >
+            Riapri la demo live →
+          </a>
+        </motion.div>
       </div>
     </section>
   );
