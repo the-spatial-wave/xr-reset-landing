@@ -1,7 +1,9 @@
 import { useState } from 'react';
 
-const ML_ACCOUNT = import.meta.env.VITE_MAILERLITE_ACCOUNT_ID as string | undefined;
-const ML_FORM = import.meta.env.VITE_MAILERLITE_FORM_ID as string | undefined;
+// ID pubblici del form embed MailerLite (non sono segreti: compaiono nell'HTML
+// di ogni form embeddato). Env override disponibile per cambiarli senza commit.
+const ML_ACCOUNT = (import.meta.env.VITE_MAILERLITE_ACCOUNT_ID as string | undefined) ?? '2511833';
+const ML_FORM = (import.meta.env.VITE_MAILERLITE_FORM_ID as string | undefined) ?? '193072438235366485';
 const SKOOL_URL = 'https://www.skool.com/spatial-wave-6263/classroom';
 
 const configured = Boolean(ML_ACCOUNT && ML_FORM);
