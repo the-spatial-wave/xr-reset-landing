@@ -21,7 +21,13 @@ export default function Navbar() {
             <a href="#bundle" className="text-sm font-medium hover:text-brand-cyan transition-colors">Bundle</a>
             <a href="#pricing" className="text-sm font-medium hover:text-brand-cyan transition-colors">Prezzo</a>
             <a href="#faq" className="text-sm font-medium hover:text-brand-cyan transition-colors">FAQ</a>
-            <motion.a 
+            <a
+              href="#contact"
+              className="px-5 py-2.5 rounded-sm border border-brand-cyan/60 text-brand-cyan font-bold text-sm text-center hover:bg-brand-cyan/10 transition-colors"
+            >
+              Scarica il PDF gratis
+            </a>
+            <motion.a
               href="https://www.skool.com/spatial-wave-6263/classroom" 
               className="px-5 py-2.5 rounded-sm bg-brand-magenta text-white font-bold hover:bg-opacity-90 transition-all shadow-[0_0_20px_rgba(255,47,214,0.4)] text-sm text-center"
               animate={{ 
@@ -49,7 +55,14 @@ export default function Navbar() {
             <a href="#bundle" className="block px-3 py-2 text-base font-medium hover:text-brand-cyan">Bundle</a>
             <a href="#pricing" className="block px-3 py-2 text-base font-medium hover:text-brand-cyan">Prezzo</a>
             <a href="#faq" className="block px-3 py-2 text-base font-medium hover:text-brand-cyan">FAQ</a>
-            <a href="https://www.skool.com/spatial-wave-6263/classroom" className="block px-3 py-2 mt-4 text-center rounded-sm bg-brand-magenta text-white font-medium glow-magenta">
+            <a
+              href="#contact"
+              onClick={() => setIsOpen(false)}
+              className="block px-3 py-2 mt-4 text-center rounded-sm border border-brand-cyan/60 text-brand-cyan font-medium"
+            >
+              Scarica il PDF gratis
+            </a>
+            <a href="https://www.skool.com/spatial-wave-6263/classroom" className="block px-3 py-2 mt-2 text-center rounded-sm bg-brand-magenta text-white font-medium glow-magenta">
               Crea la tua scena XR
             </a>
           </div>
