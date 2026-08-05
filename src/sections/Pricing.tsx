@@ -39,24 +39,22 @@ export default function Pricing() {
     },
     {
       name: 'XR Reset Bundle', price: '€29',
-      priceLabel: 'Prezzo di lancio',
-      priceNote: 'Early access\nper i primi 50 creators',
-      badge: 'FOUNDING CREATORS',
-      desc: 'Il pacchetto completo di attivazione in 7 giorni.',
+      priceNote: 'Early access per i primi 50 creators',
+      badge: 'FOUNDING CREATORS · PRIMI 50',
+      desc: 'Il tuo link pubblico in 7 giorni.\nNon un certificato. Una scena online che puoi mandare a chiunque.',
       groups: [
-        { title: 'COSA OTTIENI', items: ['Corso XR Reset', 'Repository starter', 'Protocollo di lancio'] },
-        { title: 'ASSET INCLUSI', items: ['Audio ambienti Lyra', 'Link Vercel personale'] }
+        { title: 'LA DIFFERENZA', items: ['Il tuo link Vercel personale, online e pubblico', 'Nessun software da installare, tutto nel browser', 'Funziona anche se non hai mai toccato il 3D'] },
+        { title: 'COSA OTTIENI', items: ['Protocollo di attivazione in 7 giorni', 'Repository starter pronta al deploy', 'Audio e ambienti Lyra', 'Accesso anticipato a Lyra Hub'] }
       ],
       features: [], // Fallback if needed
       cta: 'Crea la tua scena XR →', highlight: true, disabled: false,
-      footer: 'Accesso immediato'
+      footer: 'Accesso immediato · Rimborso 7 giorni'
     },
     {
-      name: 'Lyra Hub', price: "In arrivo",
+      name: 'Lyra Hub', price: '',
       desc: "La presenza immersiva di Lyra\nnell’ecosistema Spatial Wave.",
-      priceNote: "Lyra vive nello spazio XR\ne ti accompagna tra scene immersive,\ntutorial e nuovi workflow creativi.",
       groups: [
-        { title: 'IN ARRIVO', items: ['Tutorial XR e AI', 'Workflow 3D (Blender · Daz)', 'Nuove esperienze immersive'] }
+        { title: 'IL WORKFLOW', items: ['Cortometraggio generato con AI, documentato passo per passo', 'Production board e moodboard di ogni sequenza', 'Pipeline Daz Studio → Blender → scena immersiva', 'Tutorial XR e AI'] }
       ],
       features: [],
       cta: 'Unisciti alla waitlist', highlight: false, disabled: true,
@@ -109,24 +107,14 @@ export default function Pricing() {
                 {tier.priceLabel && (
                   <div className="text-brand-cyan text-xs font-bold uppercase tracking-widest mb-1">{tier.priceLabel}</div>
                 )}
-                <div className="flex items-baseline gap-2 mb-8">
-                  <div className="text-6xl font-display font-black text-white">{tier.price}</div>
-                  {tier.priceNote && (
-                    <div className="text-brand-silver/60 text-[10px] font-medium max-w-[150px] leading-tight mt-1 whitespace-pre-line">{tier.priceNote}</div>
-                  )}
-                </div>
-
-                {tier.highlight && (
-                  <div className="flex flex-col gap-2 mb-8 -mt-4">
-                    <div className="flex items-center text-[10px] sm:text-xs uppercase tracking-widest font-bold text-brand-silver/80">
-                      <span className="text-brand-cyan mr-2">✔</span> Nessun software da installare
-                    </div>
-                    <div className="flex items-center text-[10px] sm:text-xs uppercase tracking-widest font-bold text-brand-silver/80">
-                      <span className="text-brand-cyan mr-2">✔</span> Funziona nel browser
-                    </div>
-                    <div className="flex items-center text-[10px] sm:text-xs uppercase tracking-widest font-bold text-brand-silver/80">
-                      <span className="text-brand-cyan mr-2">✔</span> Deploy pubblico su Vercel
-                    </div>
+                {(tier.price || tier.priceNote) && (
+                  <div className="flex items-baseline gap-2 mb-8">
+                    {tier.price && (
+                      <div className="text-6xl font-display font-black text-white">{tier.price}</div>
+                    )}
+                    {tier.priceNote && (
+                      <div className="text-brand-silver/60 text-[10px] font-medium max-w-[150px] leading-tight mt-1 whitespace-pre-line">{tier.priceNote}</div>
+                    )}
                   </div>
                 )}
 
