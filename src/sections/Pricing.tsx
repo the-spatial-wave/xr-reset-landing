@@ -79,7 +79,7 @@ export default function Pricing() {
           </div>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-10 items-start max-w-6xl mx-auto relative z-10">
+        <div className="grid md:grid-cols-3 gap-10 items-stretch max-w-6xl mx-auto relative z-10">
           {tiers.map((tier, i) => (
             <motion.div
               key={i}
@@ -108,12 +108,12 @@ export default function Pricing() {
                   <div className="text-brand-cyan text-xs font-bold uppercase tracking-widest mb-1">{tier.priceLabel}</div>
                 )}
                 {(tier.price || tier.priceNote) && (
-                  <div className="flex items-baseline gap-2 mb-8">
+                  <div className="mb-8">
                     {tier.price && (
-                      <div className="text-6xl font-display font-black text-white">{tier.price}</div>
+                      <div className={`${tier.name === 'Starter' ? 'text-4xl' : 'text-6xl'} font-display font-black text-white`}>{tier.price}</div>
                     )}
                     {tier.priceNote && (
-                      <div className="text-brand-silver/60 text-[10px] font-medium max-w-[150px] leading-tight mt-1 whitespace-pre-line">{tier.priceNote}</div>
+                      <div className="text-brand-magenta text-[10px] font-black tracking-[0.2em] uppercase mt-3">{tier.priceNote}</div>
                     )}
                   </div>
                 )}
